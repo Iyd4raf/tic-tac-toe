@@ -1,1 +1,1 @@
-Simple tic tac toe game created with Javascript/Jquery
+Simple tic tac toe / noughts and crosses game created with Javascript/Jquery
