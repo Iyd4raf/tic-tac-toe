@@ -1,0 +1,107 @@
+
+#game {
+	height: 414px;
+	width: 414px;
+	border: 1px solid;
+	margin-top: 20px;
+}
+
+
+#message-board {
+	height: 35px;
+	width: 414px;
+	margin-top: 20px; 
+	font-family: sans-serif;
+  line-height: 30px;
+	text-align: center;
+	text-decoration-color: #0275d8;
+	font-weight: bold;
+	font-size: 1.75rem;
+}
+
+#menu {
+	width: 414px;
+	text-align: center;
+}
+
+#btnNewGame {
+	display: inline-block;
+	padding: 10px 15px 10px 15px;
+	border: 1px solid transparent;
+	border-radius: .25rem;
+	white-space: nowrap;
+	margin-top: 10px;
+	background-color: #0275d8;
+	color: white;
+	font-size: 1rem;
+	font-weight: bold;
+}
+
+p {
+  font-family: "arial";
+  font-weight: bold;
+}
+
+#player1 {
+  float: left;
+}
+
+#player2 {
+  float: right; 
+}
+
+.square {
+    display: grid;
+    float: left;
+    width: 134px;
+    height: 134px;   
+    background-color:black;
+    align-items: center;
+    font-size: 100px; 
+    text-align: center; 
+    color: white;
+   
+}
+
+
+#b1, #b2, #b3 {
+  border-bottom: 6px solid white;
+}
+
+#b2 {
+  border-left: 6px solid white;
+  border-right: 6px solid white;
+}
+
+#b4, #b5, #b6 {
+  border-bottom: 6px solid white;
+}
+
+#b5 {
+  border-left: 6px solid white;
+  border-right: 6px solid white;
+}
+
+#b8 {
+  border-left: 6px solid white;
+  border-right: 6px solid white;
+}
+
+i {
+  color: white;
+}
+
+
+#div-t {
+	display:none;
+}
+
+.disableMouseClick {
+  pointer-events: none;
+}
+
+
+.center {
+	margin-right: auto;
+	margin-left: auto;
+}
