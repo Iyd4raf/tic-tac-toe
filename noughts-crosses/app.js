@@ -16,7 +16,8 @@ var gameFinished = false;
 $(".square").on("click", function() {
 
      if (!$(this).html() && gameFinished === false) {
-       if (currentPlayer === "Player 1") {    //player 1 - display player 2's turn / display cross / check if win,full / switch player
+       if (currentPlayer === "Player 1") {    
+          //player 1 - display player 2's turn / display cross / check if win,full / switch player
           $("#player1").css("color", "lightgray");
           $("#player2").css("color", "black");
           $(this).html(iconCross);
@@ -57,25 +58,25 @@ function checkWin() {
        ($("#t1").html() == "o" && $("#t5").html() == "o" && $("#t9").html() == "o") ||
        ($("#t3").html() == "o" && $("#t5").html() == "o" && $("#t7").html() == "o") 
     ) {
-    gameFinished = true;
-    if (!$("#message-board").text()) {
-      $("#message-board").append("<span>" + currentPlayer + " wins!<br></span>");
-    }
-    $("#player1").css("color", "lightgray");
-    $("#player2").css("color", "lightgray");
+        gameFinished = true;
+        if (!$("#message-board").text()) {
+          $("#message-board").append("<span>" + currentPlayer + " wins!<br></span>");
+        }
+        $("#player1").css("color", "lightgray");
+        $("#player2").css("color", "lightgray");
   }
   
   else if (numMoves === 9) {
-    gameFinished = true;
-    if (!$("#message-board").text()) {
-      $("#message-board").append("<span>It's a tie!<br></span>"); 
-    }
-    $("#player1").css("color", "lightgray");
-    $("#player2").css("color", "lightgray");
+        gameFinished = true;
+        if (!$("#message-board").text()) {
+          $("#message-board").append("<span>It's a tie!<br></span>"); 
+        }
+        $("#player1").css("color", "lightgray");
+        $("#player2").css("color", "lightgray");
   }
   
   else {
-  currentPlayer = (currentPlayer === "Player 1") ? "Player 2":"Player 1";
+        currentPlayer = (currentPlayer === "Player 1") ? "Player 2":"Player 1";
   }
 }
          
